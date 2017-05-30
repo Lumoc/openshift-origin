@@ -462,7 +462,8 @@ openshift_use_dnsmasq=false
 openshift_master_default_subdomain=$ROUTING
 openshift_override_hostname_check=true
 osm_use_cockpit=false
-#os_sdn_network_plugin_name='redhat/openshift-ovs-multitenant'
+openshift_disable_check=disk_availability,memory_availability
+os_sdn_network_plugin_name='redhat/openshift-ovs-multitenant'
 #console_port=443
 openshift_cloudprovider_kind=azure
 osm_default_node_selector='type=app'
@@ -537,8 +538,9 @@ docker_udev_workaround=True
 openshift_use_dnsmasq=false
 openshift_master_default_subdomain=$ROUTING
 openshift_override_hostname_check=true
+openshift_disable_check=disk_availability,memory_availability
 osm_use_cockpit=false
-#os_sdn_network_plugin_name='redhat/openshift-ovs-multitenant'
+os_sdn_network_plugin_name='redhat/openshift-ovs-multitenant'
 #console_port=443
 openshift_cloudprovider_kind=azure
 osm_default_node_selector='type=app'
